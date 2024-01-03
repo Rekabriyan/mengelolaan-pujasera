@@ -4,7 +4,7 @@ const client = require('./config/connection');
 const app = express();
 
 const barangRoute = require('./routes/barangRouter');
-const kasirRoute = require('./routes/kasirRouter');
+
 app.use(bodyParser.json());
 
 app.listen(5000, () =>{
@@ -20,4 +20,3 @@ client.connect(err => {
 })
 
 app.use("/", barangRoute)
-app.use("/", kasirRoute)
