@@ -4,6 +4,7 @@ const client = require('./config/connection');
 const app = express();
 
 const barangRoute = require('./routes/barangRouter');
+const kasirRoute = require('./routes/kasirRouter');
 const tenanRoute = require('./routes/tenanRouter');
 
 app.use(bodyParser.json());
@@ -21,4 +22,3 @@ client.connect(err => {
 })
 
 app.use("/", barangRoute)
-app.use("/", tenanRoute)
