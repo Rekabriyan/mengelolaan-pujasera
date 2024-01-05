@@ -6,6 +6,7 @@ const app = express();
 const barangRoute = require('./routes/barangRouter');
 const kasirRoute = require('./routes/kasirRouter');
 const tenanRoute = require('./routes/tenanRouter');
+const notaRoute = require('./routes/notaRouter');
 
 app.use(bodyParser.json());
 
@@ -22,3 +23,6 @@ client.connect(err => {
 })
 
 app.use("/", barangRoute)
+app.use("/", kasirRoute)
+app.use("/", tenanRoute)
+app.use("/", notaRoute)
