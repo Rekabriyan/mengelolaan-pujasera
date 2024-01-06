@@ -37,7 +37,6 @@ const getNota = (req, res) => {
     const kode_nota = req.params.kode_nota;
     const {kode_tenan, kode_kasir, tgl_nota, jam_nota, jml_belanja, diskon, total} = req.body;
     notaRepository.updateNota(
-        kode_nota,
         kode_tenan,
         kode_kasir,
         tgl_nota, 
@@ -45,6 +44,7 @@ const getNota = (req, res) => {
         jml_belanja, 
         diskon, 
         total,
+        kode_nota,
       (err, result) => {
         if (!err) {
           res.send("Update berhasil");
