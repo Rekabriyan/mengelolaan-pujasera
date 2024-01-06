@@ -7,6 +7,7 @@ const barangRoute = require('./src/routes/barangRouter');
 const kasirRoute = require('./src/routes/kasirRouter');
 const tenanRoute = require('./src/routes/tenanRouter');
 const notaRoute = require('./src/routes/notaRouter');
+const barangNotaRoute = require('./src/routes/barangNotaRouter');
 
 app.use(bodyParser.json());
 
@@ -26,3 +27,4 @@ app.use("/", barangRoute)
 app.use("/", kasirRoute)
 app.use("/", tenanRoute)
 app.use("/", notaRoute)
+app.use("/", barangNotaRoute)
