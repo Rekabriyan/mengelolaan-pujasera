@@ -1,4 +1,4 @@
-const client = require("../config/connection");
+const client = require("../../config/connection");
 
 const insertNota = (kode_tenan, kode_kasir, tgl_nota, jam_nota, jml_belanja, diskon, total, callback) => {
     const query = 

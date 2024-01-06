@@ -1,4 +1,4 @@
-const client = require("../config/connection");
+const client = require("../../config/connection");
 
 const insertTenan = (nama_tenan, hp, callback) => {
   const query =

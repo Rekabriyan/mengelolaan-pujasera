@@ -1,4 +1,4 @@
-const client = require("../config/connection");
+const client = require("../../config/connection");
 
 const insertBarang = (nama_barang, satuan, harga_satuan, stok, callback) => {
   const query =

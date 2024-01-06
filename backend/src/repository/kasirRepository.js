@@ -1,4 +1,4 @@
-const client = require("../config/connection");
+const client = require("../../config/connection");
 
 const insertKasir = (nama_kasir, hp, callback) => {
   const query =
