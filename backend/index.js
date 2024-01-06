@@ -3,10 +3,10 @@ const bodyParser = require('body-parser');
 const client = require('./config/connection');
 const app = express();
 
-const barangRoute = require('./routes/barangRouter');
-const kasirRoute = require('./routes/kasirRouter');
-const tenanRoute = require('./routes/tenanRouter');
-const notaRoute = require('./routes/notaRouter');
+const barangRoute = require('./src/routes/barangRouter');
+const kasirRoute = require('./src/routes/kasirRouter');
+const tenanRoute = require('./src/routes/tenanRouter');
+const notaRoute = require('./src/routes/notaRouter');
 
 app.use(bodyParser.json());
 
